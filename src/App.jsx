@@ -5,6 +5,7 @@ import TvShow from "./components/TvShow";
 import CarouselGrid from "./components/CarouselGrid";
 import MyFooter from "./components/MyFooter";
 import MyProfile from "./components/MyProfile";
+import MySettingPage from "./components/MySettingPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </div>
       </main>
       <MyProfile/>
+      <MySettingPage/>
       <MyFooter />
     </div>
   );

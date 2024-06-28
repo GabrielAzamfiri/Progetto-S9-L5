@@ -18,7 +18,7 @@ class MyProfile extends Component {
             <h1>Edit Profile</h1>
             <hr className="my-4" />
             <Row className="row justify-content-center">
-              <Col sm={4} className="col-6  mb-5 ">
+              <Col sm={4} className="mb-5 ">
                 <div className="position-relative">
                   <img src={avatar} width="100%" alt="" />
                   <button type="button" className="btn btn-dark position-absolute start-0 bottom-0 mb-2 ms-2 px-1 border border-white rounded-circle">
@@ -28,7 +28,7 @@ class MyProfile extends Component {
                   </button>
                 </div>
               </Col>
-              <div className="col-10 col-sm-8 text-start">
+              <Col sm={8} className="text-start">
                 <div className="bg-secondary ps-3 text-center">
                   <p className="py-2">Strive Student</p>
                 </div>
@@ -73,7 +73,7 @@ class MyProfile extends Component {
                   </label>
                   <span className="ms-3">Autoplay previews while browsing on all devices.</span>
                 </div>
-              </div>
+              </Col>
             </Row>
             <div className="row my-5">
               <div className="btn-group col-3">

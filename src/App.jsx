@@ -14,9 +14,15 @@ function App() {
 
       <TvShow/>
       <div className='my4 '>
-        <div className='my-5 d-flex justify-content-start'>
-          <h3 className='mb-4'>Trending Now</h3>
-          <CarouselGrid film="Harry Potter"/>
+        <div className='my-5'>
+          
+          <CarouselGrid film="one piece" carouselTitle="Best Anime" />
+          <CarouselGrid film="naruto" carouselTitle="Best anime until Shippuden" />
+          <CarouselGrid film="transformers" carouselTitle="Tranding Last Week" />
+          <CarouselGrid film="Harry Potter" carouselTitle="Watch It Again" />
+
+
+
         </div>
         
       

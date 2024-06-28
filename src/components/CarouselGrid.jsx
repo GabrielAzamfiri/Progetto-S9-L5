@@ -1,15 +1,21 @@
 import { Component } from "react";
-import { Carousel } from "react-bootstrap";
+
 import MyCarouselItem from "./MyCarouselItem";
 
 class CarouselGrid extends Component {
-  
   render() {
     return (
-      <Carousel >
-        <MyCarouselItem film={this.props.film} />
+      
+      <div>
+
+        <h3 className="my-5 text-start">{this.props.carouselTitle}</h3>
        
-      </Carousel>
+          <MyCarouselItem film={this.props.film} indexCol="5" />
+      </div>
+      
+          
+    
+      
     );
   }
 }

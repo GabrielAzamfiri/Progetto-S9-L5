@@ -16,12 +16,8 @@ class MyProfile extends Component {
   }
   render() {
     return (
-      <div className="d-none ">
-        <div className="py-3" style={{ background: "linear-gradient(180deg, rgba(1, 1, 10, 1) 0%, rgba(26, 29, 32, 1) 64%)" }}>
-          <a href="#">
-            <img src={logo} width="150px" alt="" />
-          </a>
-        </div>
+      <div  style={{display: this.props.display}}>
+        
         <Row className="justify-content-center">
           <Col sm={10} lg={8} xl={6} className="my-5">
             <h1>Edit Profile</h1>

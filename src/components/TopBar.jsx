@@ -3,6 +3,23 @@ import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import logo from "../assets/img/netflix_logo.png";
 import avatar from "../assets/img/avatar.png";
 class TopBar extends Component {
+  handleSelect = eventKey => {
+    switch (eventKey) {
+      case "home":
+        this.props.homePage();
+        break;
+      case "profile":
+        this.props.profilePage();
+        break;
+        case "setting":
+        this.props.settingPage();
+        break;
+      default:
+        break;
+    }
+
+  
+  }
   render() {
     return (
       <header style={{background: "linear-gradient(180deg, rgba(1, 1, 10, 1) 0%, rgba(26, 29, 32, 1) 64%)"}}>
@@ -20,7 +37,7 @@ class TopBar extends Component {
                 <Nav.Link href="#link3">Recently Added</Nav.Link>
                 <Nav.Link href="#link4">My List</Nav.Link>
               </Nav>
-              <Nav className="navbar-nav my-2 my-lg-0 align-items-center column-gap-3 flex-row justify-content-end">
+              <Nav className="navbar-nav my-2 my-lg-0 align-items-center column-gap-3 flex-row justify-content-end" onSelect={this.handleSelect}>
                 <Nav.Link href="#link5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" fill="#e3e3e3" className="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
@@ -43,11 +60,11 @@ class TopBar extends Component {
                 <Nav.Link href="#link8">
                   <img src={avatar} width="50px" alt="avatar" />
                 </Nav.Link>
-                <NavDropdown title="" id="basic-nav-dropdown" align="end">
-                  <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Profile</NavDropdown.Item>
+                <NavDropdown title="" id="basic-nav-dropdown" align="end" >
+                  <NavDropdown.Item eventKey="home" href="#action/3.1">Home</NavDropdown.Item>
+                  <NavDropdown.Item eventKey="profile" href="#action/3.2">Profile</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.3">Settings</NavDropdown.Item>
+                  <NavDropdown.Item eventKey="setting" href="#action/3.3">Settings</NavDropdown.Item>
                   
                 </NavDropdown>
               </Nav>

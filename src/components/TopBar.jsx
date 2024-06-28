@@ -11,21 +11,19 @@ class TopBar extends Component {
       case "profile":
         this.props.profilePage();
         break;
-        case "setting":
+      case "setting":
         this.props.settingPage();
         break;
       default:
         break;
     }
-
-  
-  }
+  };
   render() {
     return (
-      <header style={{background: "linear-gradient(180deg, rgba(1, 1, 10, 1) 0%, rgba(26, 29, 32, 1) 64%)"}}>
-        <Navbar expand="lg" >
-          <Container className="container-fluid container-lg" >
-            <Navbar.Brand href="#">
+      <header style={{ background: "linear-gradient(180deg, rgba(1, 1, 10, 1) 0%, rgba(26, 29, 32, 1) 64%)" }}>
+        <Navbar expand="lg">
+          <Container className="container-fluid container-lg">
+            <Navbar.Brand href="home">
               <img src={logo} alt="netflix_logo" width="120px" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -44,28 +42,25 @@ class TopBar extends Component {
                   </svg>
                 </Nav.Link>
                 <Nav.Link href="#link6">KIDS</Nav.Link>
-                <Nav.Link href="#link7">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22px"
-                    height="22px"
-                    fill="#e3e3e3
-              "
-                    className="bi bi-bell-fill"
-                    viewBox="0 0 16 16"
-                  >
+                <Nav.Link href="#link7" >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" fill="#e3e3e3" className="bi bi-bell-fill" viewBox="0 0 16 16">
                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
                   </svg>
                 </Nav.Link>
-                <Nav.Link href="#link8">
+                <Nav.Link href="#profile" eventKey="profile" onClick={this.handleSelect}>
                   <img src={avatar} width="50px" alt="avatar" />
                 </Nav.Link>
-                <NavDropdown title="" id="basic-nav-dropdown" align="end" >
-                  <NavDropdown.Item eventKey="home" href="#action/3.1">Home</NavDropdown.Item>
-                  <NavDropdown.Item eventKey="profile" href="#action/3.2">Profile</NavDropdown.Item>
+                <NavDropdown title="" id="basic-nav-dropdown" align="end">
+                  <NavDropdown.Item eventKey="home" href="#home">
+                    Home
+                  </NavDropdown.Item>
+                  <NavDropdown.Item eventKey="profile" href="#profile">
+                    Profile
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item eventKey="setting" href="#action/3.3">Settings</NavDropdown.Item>
-                  
+                  <NavDropdown.Item eventKey="setting" href="#setting">
+                    Settings
+                  </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>

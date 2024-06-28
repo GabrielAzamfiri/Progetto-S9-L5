@@ -13,7 +13,7 @@ class MySettingPage extends Component {
               <h1>Account</h1>
               <hr />
               <Row>
-                <Col lg="4" className="text-body-tertiary">
+                <Col lg="4" className="mb-4 text-body-tertiary">
                   MEMBERSHIP & BILLING
                   <div className="fs-6">
                     <button type="button" className="border-0 px-4 py-2">

@@ -7,6 +7,7 @@ import MyFooter from "./components/MyFooter";
 import MyProfile from "./components/MyProfile";
 import MySettingPage from "./components/MySettingPage";
 import { Component } from "react";
+import SimpleSlider from "./components/SimpleSlider";
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
               <CarouselGrid film="naruto" carouselTitle="Best anime until Shippuden" />
               <CarouselGrid film="transformers" carouselTitle="Tranding Last Week" />
               <CarouselGrid film="Harry Potter" carouselTitle="Watch It Again" />
+              <SimpleSlider film="pokemon" carouselTitle="Gotta Catch 'Em All"/>
             </div>
           </div>
         </main>
@@ -47,15 +49,4 @@ class App extends Component {
 }
 
 export default App;
-// const btncheck2 = document.querySelector("#btncheck2");
-// const btncheck2Icon = document.querySelector("#btncheck2Icon");
-// const btncheck1 = document.querySelector("#btncheck1");
-// const btncheck1Icon = document.querySelector("#btncheck1Icon");
 
-// //   funzione che al click della checkbox cambia l'opacità del svg interna
-// btncheck1.addEventListener("click", () => {
-//   btncheck1Icon.classList.toggle("opacity1");
-// });
-// btncheck2.addEventListener("click", () => {
-//   btncheck2Icon.classList.toggle("opacity1");
-// });

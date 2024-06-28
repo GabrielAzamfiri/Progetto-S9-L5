@@ -44,3 +44,6 @@
 .opacity1 {
   opacity: 1 !important;
 }
+.slick-track img:hover {
+  border: solid 3px rgb(149, 167, 250);
+}

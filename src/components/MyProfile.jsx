@@ -16,7 +16,7 @@ class MyProfile extends Component {
   }
   render() {
     return (
-      <div className="d-block ">
+      <div className="d-none ">
         <div className="py-3" style={{ background: "linear-gradient(180deg, rgba(1, 1, 10, 1) 0%, rgba(26, 29, 32, 1) 64%)" }}>
           <a href="#">
             <img src={logo} width="150px" alt="" />

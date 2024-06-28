@@ -42,7 +42,7 @@ class MyCarouselItem extends Component {
                   <img src={this.state.films[1].Poster} alt="immagine film" class="w-100" height={300}/>
                 </a>
               </Col>
-              <Col className=" d-none d-sm-inline">
+              <Col className=" d-none d-sm-inline" >
                 <a href="#">
                   <img src={this.state.films[2].Poster} alt="immagine film" class="w-100" height={300}/>
                 </a>

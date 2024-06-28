@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel img:hover {
+  border: solid 3px rgb(149, 167, 250);
+}

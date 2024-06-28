@@ -40,3 +40,7 @@
 .carousel img:hover {
   border: solid 3px rgb(149, 167, 250);
 }
+
+.opacity1 {
+  opacity: 1 !important;
+}

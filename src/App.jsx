@@ -25,8 +25,21 @@ function App() {
       <MyProfile/>
       <MySettingPage/>
       <MyFooter />
+      
     </div>
   );
 }
 
 export default App;
+const btncheck2 = document.querySelector("#btncheck2");
+const btncheck2Icon = document.querySelector("#btncheck2Icon");
+const btncheck1 = document.querySelector("#btncheck1");
+const btncheck1Icon = document.querySelector("#btncheck1Icon");
+
+//   funzione che al click della checkbox cambia l'opacità del svg interna
+btncheck1.addEventListener("click", () => {
+  btncheck1Icon.classList.toggle("opacity1");
+});
+btncheck2.addEventListener("click", () => {
+  btncheck2Icon.classList.toggle("opacity1");
+});

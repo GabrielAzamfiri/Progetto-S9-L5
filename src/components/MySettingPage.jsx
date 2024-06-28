@@ -101,7 +101,7 @@ class MySettingPage extends Component {
                 <Col lg="4" className="text-body-tertiary">
                   SETTINGS
                 </Col>
-                <Col lg="8">
+                <Col lg="8" className="text-start">
                   <p className="my-1">
                     <a href="#" className="text-decoration-none">
                       Parental controls
@@ -157,7 +157,7 @@ class MySettingPage extends Component {
                     </div>
                   </div>
                   <Row>
-                    <Col lg="5">
+                    <Col lg="5" className="text-start">
                       <p className="my-1">
                         <a href="#" className="text-decoration-none">
                           Language
@@ -174,7 +174,7 @@ class MySettingPage extends Component {
                         </a>
                       </p>
                     </Col>
-                    <div className="col-12 col-lg-7">
+                    <Col lg={7} className="text-start ">
                       <p className="my-1">
                         <a href="#" className="text-decoration-none">
                           Viewing activity
@@ -185,7 +185,7 @@ class MySettingPage extends Component {
                           Ratings
                         </a>
                       </p>
-                    </div>
+                    </Col>
                   </Row>
                 </Col>
               </Row>
